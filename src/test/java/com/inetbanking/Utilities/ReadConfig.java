@@ -6,15 +6,18 @@ import java.util.Properties;
 
 public class ReadConfig {
 
-	Properties pro;
+	
+	//In this class we are opening the configuration file and creating the methods(with return) for all the configurations or environments 
+	
+	Properties pro; // properties is the Java class
 	
 	public ReadConfig()
 	{
-		File src =new File("./Configuration/config.properties");
+		File src =new File("./Configuration/config.properties"); // "./" this will start from current directory in config file class
 		
 		try {
-			FileInputStream fis = new FileInputStream(src); // config file is considered as xml
 			pro= new Properties();
+			FileInputStream fis = new FileInputStream(src); // config file is considered as excel
 			pro.load(fis); // this is for loading the file
 			
 		}catch(Exception e) {
@@ -59,5 +62,33 @@ public class ReadConfig {
 		return iepath;
 	}
 	
+	public String getSwitchingWindowURL()
+	{
+		String windowurl=pro.getProperty("SwitchingWindowURL");
+		return windowurl;
+	}
 	
+	public String getAlertURL()
+	{
+		String alerturl=pro.getProperty("AlertURL");
+		return alerturl;
+	}
+	
+	public String getDownloadFileURL()
+	{
+		String downloadfileurl=pro.getProperty("DownloadFileURL");
+		return downloadfileurl;
+	}
+	
+	public String FormyURL()
+	{
+		String formyurl=pro.getProperty("FormyURL");
+		return formyurl;
+	}
+	
+	public String DemoQAURL()
+	{
+		String demoqaurl=pro.getProperty("DemoQAURL");
+		return demoqaurl;
+	}
 }

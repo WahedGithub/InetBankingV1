@@ -23,11 +23,10 @@ public class TC_LoginDDT_002 extends BaseClass
 		lp.setPassword(pwd);
 		logger.info("Password is provided");
 		lp.clicksubmit();
-		
+	
 		if(isAlertPresent()==true)
 		{
-			driver.switchTo().alert().accept();
-			driver.switchTo().defaultContent(); // this command focus on the main page
+			handleAlertAccept();
 			Assert.assertTrue(false); // using false here coz its a failure case
 			logger.warn("login failed");
 		}
@@ -36,14 +35,13 @@ public class TC_LoginDDT_002 extends BaseClass
 			Assert.assertTrue(true); // this is passed case if the alert is not present when valid credentials are passed
 			logger.info("Login successfully");
 			lp.clickLogout();
-			driver.switchTo().alert().accept(); // close logout alert
-			driver.switchTo().defaultContent();
+			handleAlertAccept(); // close logout alert
 		}
 		
 		
 	}
 	
-	public boolean isAlertPresent() // user defined method created to check alert is present or not
+	/*public boolean isAlertPresent() // user defined method created to check alert is present or not
 	{
 		try {
 		driver.switchTo().alert();
@@ -53,7 +51,7 @@ public class TC_LoginDDT_002 extends BaseClass
 		{
 			return false;
 		}
-	}
+	} */
 	
 	@DataProvider(name= "LoginData")
 	String [][] getData() throws Exception

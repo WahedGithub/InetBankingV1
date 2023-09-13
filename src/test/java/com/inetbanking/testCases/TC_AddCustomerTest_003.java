@@ -15,6 +15,7 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 	public void AddNewCustomer() throws InterruptedException, IOException
 	{
 		LoginPage lp=new LoginPage(driver);
+		
 		lp.setUserName(username);
 		logger.info("Provided the UserName");
 		lp.setPassword(password);
@@ -45,7 +46,7 @@ public class TC_AddCustomerTest_003 extends BaseClass{
 		Thread.sleep(3000);
 		AC.Custsubmit();
 		
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 		
 		boolean res=driver.getPageSource().contains("Customer Registered Successfully!!!");
 		if(res==true)

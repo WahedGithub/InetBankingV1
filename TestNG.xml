@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="InetBankingV1">
+<suite name="InetBankingV1" verbose="5">
 	
 	<listeners>
 		<listener class-name= "com.qa.ExtentReportListener.ExtentReportListener" />
@@ -10,9 +10,18 @@
 	  <parameter name="browser" value="chrome" />
 	  
     <classes>
-      <class name="com.inetbanking.testCases.TC_LoginTest_001"/>
+     <!-- <class name="com.inetbanking.testCases.TC_LoginTest_001"/> -->
       <!-- <class name="com.inetbanking.testCases.TC_LoginDDT_002"/> -->
-      <!-- <class name="com.inetbanking.testCases.TC_AddCustomerTest_003"/> -->
+     <!-- <class name="com.inetbanking.testCases.TC_AddCustomerTest_003"/> --> 
+     <!-- <class name="com.inetbanking.testCases.TC_EditCustomer_004" /> -->
+      <!--<class name="com.inetbanking.testCases.TC_CustomizedStatement_005" /> -->
+      <!-- <class name="com.inetbanking.testCases.TC_WindowHandler" /> -->
+      
+      <!-- <class name="com.inetbanking.testCases.TC_AlertHandle" /> -->
+      <!-- <class name="com.inetbanking.testCases.TC_RobotKeyPadActions" /> -->
+      
+      <class name="com.inetbanking.testCases.FormyMultipleMethods" />
+       <!-- <class name="com.inetbanking.testCases.TC_MouseHovers_Actions" /> -->
     </classes>
     
     

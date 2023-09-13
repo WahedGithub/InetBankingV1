@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-27T22:11:09 CDT" name="InetBankingV1" finished-at="2023-07-27T22:11:20 CDT" duration-ms="10536">
+  <suite started-at="2023-08-24T15:39:28 CDT" name="InetBankingV1" finished-at="2023-08-24T15:39:37 CDT" duration-ms="8446">
     <groups>
     </groups>
-    <test started-at="2023-07-27T22:11:09 CDT" name="BankingApp Test" finished-at="2023-07-27T22:11:20 CDT" duration-ms="10536">
-      <class name="com.inetbanking.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@3eb25e1a]" started-at="2023-07-27T22:11:09 CDT" name="setup" finished-at="2023-07-27T22:11:14 CDT" duration-ms="5298" status="PASS">
+    <test started-at="2023-08-24T15:39:28 CDT" name="BankingApp Test" finished-at="2023-08-24T15:39:37 CDT" duration-ms="8446">
+      <class name="com.inetbanking.testCases.FormyMultipleMethods">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.inetbanking.testCases.FormyMultipleMethods@3c9754d8]" started-at="2023-08-24T15:39:28 CDT" name="setup" finished-at="2023-08-24T15:39:30 CDT" duration-ms="1440" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@3eb25e1a]" started-at="2023-07-27T22:11:14 CDT" name="LoginTest" finished-at="2023-07-27T22:11:19 CDT" duration-ms="4874" status="PASS">
+        <test-method signature="FillingForm()[pri:0, instance:com.inetbanking.testCases.FormyMultipleMethods@3c9754d8]" started-at="2023-08-24T15:39:30 CDT" name="FillingForm" finished-at="2023-08-24T15:39:36 CDT" duration-ms="6819" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "radiobtn" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "radiobtn" is null
+at com.inetbanking.testCases.BaseClass.selectCheckBox(BaseClass.java:244)
+at com.inetbanking.testCases.FormyMultipleMethods.FillingForm(FormyMultipleMethods.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.TC_LoginTest_001@3eb25e1a]" started-at="2023-07-27T22:11:19 CDT" name="tearDown" finished-at="2023-07-27T22:11:20 CDT" duration-ms="334" status="PASS">
+        </test-method> <!-- FillingForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetbanking.testCases.FormyMultipleMethods@3c9754d8]" started-at="2023-08-24T15:39:36 CDT" name="tearDown" finished-at="2023-08-24T15:39:37 CDT" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.inetbanking.testCases.TC_LoginTest_001 -->
+      </class> <!-- com.inetbanking.testCases.FormyMultipleMethods -->
     </test> <!-- BankingApp Test -->
   </suite> <!-- InetBankingV1 -->
 </testng-results>

@@ -7,20 +7,13 @@
   <test thread-count="5" name="BankingApp Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.inetbanking.testCases.TC_LoginTest_001">
+      <class name="com.inetbanking.testCases.FormyMultipleMethods">
         <methods>
-          <include name="LoginTest"/>
+          <include name="FillingForm"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.inetbanking.testCases.TC_LoginTest_001 -->
-      <class name="com.inetbanking.testCases.TC_AddCustomerTest_003">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="AddNewCustomer"/>
-        </methods>
-      </class> <!-- com.inetbanking.testCases.TC_AddCustomerTest_003 -->
+      </class> <!-- com.inetbanking.testCases.FormyMultipleMethods -->
     </classes>
   </test> <!-- BankingApp Test(failed) -->
 </suite> <!-- Failed suite [InetBankingV1] -->
